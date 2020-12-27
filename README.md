@@ -44,14 +44,13 @@ Therefore, the final 3 Csv files are produced:
       * `ramen_name`: the ramen name that the post introduces.
       * `fb_review`: the feedback after visiting this store in this post.
 
-Procedure:
+####  Procedure:
 * Step 1: Run `map_store_table.ipynb`
-      * Input the Map_Ramen_data_with_city.csv (the data you crawl)
-      * Group the same brands of the stores, and select the non-overlapped ramen brands for Main_Store.csv
-      * Label all of the stores and output Store.csv 
+    * Input the Map_Ramen_data_with_city.csv (the data you crawl)
+    * Group the same brands of the stores, and select the non-overlapped ramen brands for Main_Store.csv
+    * Label all of the stores and output Store.csv 
 * Step 2: Run `fb_post_table.ipynb`
-      * Input fb_crawling_output.csv (the data you crawl)
-      * Preprocessing the post's contents and published time
-      * Match the store name of the post according to the Main_Store.csv to create the ids and output Post.csv
-
+    * Input fb_crawling_output.csv (the data you crawl)
+    * Preprocessing the post's contents and published time
+    * Match the store name of the post according to the Main_Store.csv to create the ids and output Post.csv
 
