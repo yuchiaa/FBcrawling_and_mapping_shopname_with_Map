@@ -13,15 +13,15 @@ Run `the facebook_crawling.py`
 ---
 
 ## Data Organization
-The task at this stage is to conbime the Google map crawling and Facebook crawling files. <\n>
+The task at this stage is to conbime the **Google map crawling** and **Facebook crawling files**. 
 First of all, both of the crawling files will undergo text preprocessing in order to provide the correct information we need.
 Then, We match the same ramen stores appearing in the both files, and label them with the same id.
 Therefore, the final 3 Csv files are produced:
 
-  1. Main_Store.csv: 
+  **1. Main_Store.csv:** 
       * store_id: the id of the non-overlapped ramen brands in Taiwan.
       * main_store: the name of the non-overlapped ramen brands in Taiwan.
-  2. Store.csv: 
+  **2. Store.csv:**
       * detail_store_id: the unique id of each store in the table for database to recognize.
       * store_id: according to the ramen brands in Main_Store.csv, the stores that match with the brands will have the same id.
       * store: the ramen store names we've crawled including main stores and detail stores.
@@ -36,7 +36,7 @@ Therefore, the final 3 Csv files are produced:
       * province: the city which the ramen store is located.
       * soup: the representive soup flavor tags for this store.
       * transport: the nearby landmarks or the transportation information for the store.
-  3. Post.csv
+  **3. Post.csv**
       * post_id: the unique id of each post in the table for database to recognize.
       * store_id: according to the ramen brands in Main_Store.csv, the store of the post that matches the brands will have the same id.
       * stores: the store name that the post introduces.
@@ -45,11 +45,11 @@ Therefore, the final 3 Csv files are produced:
       * fb_review: the feedback after visiting this store in this post.
 
 Procedure:
-Step 1: Run `map_store_table.ipynb`
+* Step 1: Run `map_store_table.ipynb`
         1) Input the Map_Ramen_data_with_city.csv (the data you crawl)
         2) Group the same brands of the stores, and select the non-overlapped ramen brands for Main_Store.csv
         3) Label all of the stores and output Store.csv 
-Step 2: Run `fb_post_table.ipynb`
+* Step 2: Run `fb_post_table.ipynb`
         1) Input fb_crawling_output.csv (the data you crawl)
         2) Preprocessing the post's contents and published time
         3) Match the store name of the post according to the Main_Store.csv to create the ids and output Post.csv
