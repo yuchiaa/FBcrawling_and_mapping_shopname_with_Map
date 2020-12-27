@@ -2,14 +2,15 @@
 Facebook private group online crawling and organizing the post contents.
 
 
-## Facebook Private Group Posts Crawling
+## Facebook Private Group Crawling
 Run `the facebook_crawling.py`
-Step 1: install selenium and webdriver and the required packages
-Step 2: set your username and password in .env
-Step 3: change the chromedriver_path and the url of the website you want to crawl
-Step 4: set the number of iteration for dynamic page scrolling in the main function
-Step 5: name the output file in main funtion
+* Step 1: install selenium and webdriver and the required packages
+* Step 2: set your username and password in .env
+* Step 3: change the chromedriver_path and the url of the website you want to crawl
+* Step 4: set the number of iteration for dynamic page scrolling in the main function
+* Step 5: name the output file in main funtion
 
+---
 
 ## Data Organization
 The task at this stage is to conbime the Google map crawling and Facebook crawling files.
