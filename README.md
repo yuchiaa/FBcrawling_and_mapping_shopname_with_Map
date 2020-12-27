@@ -13,7 +13,7 @@ Run `the facebook_crawling.py`
 ---
 
 ## Data Organization
-The task at this stage is to conbime the Google map crawling and Facebook crawling files.
+The task at this stage is to conbime the Google map crawling and Facebook crawling files. \n
 First of all, both of the crawling files will undergo text preprocessing in order to provide the correct information we need.
 Then, We match the same ramen stores appearing in the both files, and label them with the same id.
 Therefore, the final 3 Csv files are produced:
